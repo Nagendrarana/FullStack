@@ -5,7 +5,27 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    margin: auto;
 }
 .higlightTurn{
     color: wheat;
 }
+body{
+    background-color: black;
+}
+.reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .reset-button:hover {
+    background-color: #0056b3;
+  }
+  

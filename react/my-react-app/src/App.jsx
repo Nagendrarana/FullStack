@@ -29,8 +29,8 @@ function NotFound() {
 function TicTacToe(){
  return(
   <div>
-    <h1>Tic Tac Toe</h1>
-    <p>This is the Tic Tac Toe game.</p>
+    <h1 className='text-white'>Tic Tac Toe</h1>
+    <p className='text-white'> This is the Tic Tac Toe game.</p>
     <Grid numberOfCards={9} />
   </div>
  )

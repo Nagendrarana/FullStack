@@ -27,6 +27,12 @@ function Grid({ numberOfCards }) {
     }
     return null;
   }
+  function resetGame() {
+    setBoard(Array(numberOfCards).fill(""));
+    setWinner(null);
+    setWinningCombo([]);
+    setCurrentTurn(true);
+  }
 
   function play(idx) {
     if (board[idx] !== "" || winner) return;
@@ -46,7 +52,7 @@ function Grid({ numberOfCards }) {
 
   return (
     <>
-      <h1 className="highlightTurn">
+      <h1 className="highlightTurn text-white">
         {winner ? `Winner: ${winner}` : `Current Turn: ${currentTurn ? "O" : "X"}`}
       </h1>
       <div className="grid">
@@ -59,6 +65,8 @@ function Grid({ numberOfCards }) {
           />
         ))}
       </div>
+      <button className="reset-button" onClick={resetGame}>Reset Game</button>
+
     </>
   );
 }

@@ -2,6 +2,7 @@ import './App.css'
 import { Routes, Route, Link } from 'react-router-dom'
 import Button from './components/button/button'
 import TextInputForm from './components/TextInputForm/TextInputForm'
+import Grid from './components/gird/Grid'
 
 function Home() {
   return (
@@ -30,6 +31,7 @@ function TicTacToe(){
   <div>
     <h1>Tic Tac Toe</h1>
     <p>This is the Tic Tac Toe game.</p>
+    <Grid numberOfCards={9} />
   </div>
  )
 }

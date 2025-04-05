@@ -25,6 +25,14 @@ function About() {
 function NotFound() {
   return <h1>404 - Page Not Found</h1>
 }
+function TicTacToe(){
+ return(
+  <div>
+    <h1>Tic Tac Toe</h1>
+    <p>This is the Tic Tac Toe game.</p>
+  </div>
+ )
+}
 
 function App() {
   return (
@@ -32,11 +40,13 @@ function App() {
       <nav style={{ padding: '10px', backgroundColor: '#eee' }}>
         <Link to="/" style={{ marginRight: '10px' }}>Home</Link>
         <Link to="/about">About</Link>
+        <Link to="/tic-tac-toe" style={{ marginLeft: '10px' }}>Tic Tac Toe</Link>
       </nav>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/tic-tac-toe" element={<TicTacToe/>}/>
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

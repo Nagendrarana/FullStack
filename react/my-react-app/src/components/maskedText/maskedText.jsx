@@ -68,7 +68,8 @@ function MaskedText({ text }) {
       )}
 
       {!hasWon && !gameOver && (
-        <LetterButton updateUsedLetters={updateUsedLetters} />
+        <LetterButton updateUsedLetters={updateUsedLetters} disabled={hasWon || gameOver} usedLetters={usedLetters} />
+
       )}
 
       <div className="mt-4 text-white">Wrong Guesses: {wrongGuesses} / {MAX_WRONG_GUESSES}</div>

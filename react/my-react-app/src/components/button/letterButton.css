@@ -1,0 +1,28 @@
+.letterButton {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .letterButton button {
+    background-color: #4a90e2;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .letterButton button:hover {
+    background-color: #357ab8;
+  }
+  
+  .letterButton button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  

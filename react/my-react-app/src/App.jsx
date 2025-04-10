@@ -6,6 +6,7 @@ import Grid from './components/gird/Grid'
 import MaskedText from './components/maskedText/maskedText'
 import { getRandomWord } from './utility/randomWordGenerator'
 import { useState } from 'react'
+import CoinTable from './components/CoinTable/CoinTable'
 
 function Home() {
   return (
@@ -62,6 +63,7 @@ function Hangman() {
 }
 
 
+
 function App() {
   return (
     <>
@@ -70,6 +72,7 @@ function App() {
         <Link to="/about">About</Link>
         <Link to="/tic-tac-toe" style={{ marginLeft: '10px' }}>Tic Tac Toe</Link>
         <Link to="/hangman" style={{ marginLeft: '10px' }}>Hangman</Link>
+        <Link to="/coin-table" style={{ marginLeft: '10px' }}>Coin Table</Link>
       </nav>
 
       <Routes>
@@ -77,6 +80,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/tic-tac-toe" element={<TicTacToe/>}/>
         <Route path="/hangman" element={<Hangman/>}/>
+        <Route path="/coin-table" element={<CoinTable />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

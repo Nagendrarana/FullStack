@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { fetchCoinData } from "../../services/fetchCoinData.js";
 
 function CoinTable(){
     async function Download(){
@@ -8,7 +9,8 @@ function CoinTable(){
     }
     useEffect(
        () =>{
-        Download()
+        // Download()
+        fetchCoinData();
        }
         ,[]
     )

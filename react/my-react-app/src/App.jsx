@@ -62,7 +62,9 @@ function Hangman() {
   );
 }
 
-
+function CustomForm () {
+  return <CustomFormImpl />
+}
 
 function App() {
   return (
@@ -73,6 +75,7 @@ function App() {
         <Link to="/tic-tac-toe" style={{ marginLeft: '10px' }}>Tic Tac Toe</Link>
         <Link to="/hangman" style={{ marginLeft: '10px' }}>Hangman</Link>
         <Link to="/coin-table" style={{ marginLeft: '10px' }}>Coin Table</Link>
+        <Link to="/custom-form" style={{ marginLeft: '10px' }}>Custom Form</Link>
       </nav>
 
       <Routes>
@@ -82,6 +85,7 @@ function App() {
         <Route path="/hangman" element={<Hangman/>}/>
         <Route path="/coin-table" element={<CoinTable />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/custom-form" element={<CustomForm />} />
       </Routes>
     </>
   )
